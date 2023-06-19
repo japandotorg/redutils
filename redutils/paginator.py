@@ -210,7 +210,7 @@ class PaginatorView(discord.ui.View):
     @discord.ui.button(
         style=discord.ButtonStyle.green,
         custom_id="previous",
-        emoji="\N{BLACK LEFT-POINTING TRIANGLE}\N{VARIATION SELECTOR-16}",
+        emoji="\N{BLACK LEFT-POINTING TRIANGLE}",
     )
     async def _previous(
         self, interaction: discord.Interaction, button: discord.ui.Button, /
@@ -225,7 +225,7 @@ class PaginatorView(discord.ui.View):
     @discord.ui.button(
         style=discord.ButtonStyle.green,
         custom_id="next",
-        emoji="\N{BLACK RIGHTWARDS ARROW}\N{VARIATION SELECTOR-16}",
+        emoji="\N{BLACK RIGHTWARDS ARROW}",
     )
     async def _next(
         self, interaction: discord.Interaction, button: discord.ui.Button, /
