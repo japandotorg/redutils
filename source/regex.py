@@ -1,6 +1,12 @@
 import re
 
 
+__all__ = (
+    "INVITE_RE",
+    "TIME_REGEX",
+)
+
+
 INVITE_RE = re.compile(
     r"(?:discord(?:[\.,]|dot)gg|"  # Could be discord.gg/
     r"discord(?:[\.,]|dot)com(?:\/|slash)invite|"  # or discord.com/invite/

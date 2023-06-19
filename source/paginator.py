@@ -6,6 +6,14 @@ import discord
 from redbot.core import commands
 
 
+__all__ = (
+    "Page",
+    "Pages",
+    "RedPaginator",
+    "PaginatorView",
+)
+
+
 def get_chunks(iterable: Iterable[Any], size: int) -> Iterable[Tuple[Any, Any]]:
     it = iter(iterable)
     return iter(lambda: tuple(islice(it, size)), ())

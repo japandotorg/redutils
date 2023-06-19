@@ -7,6 +7,13 @@ from redbot.core.bot import Red
 from redbot.core import commands
 
 
+__all__ = (
+    "PromptSelect",
+    "PromptView",
+    "AutoComplete",
+)
+
+
 class PromptSelect(discord.ui.Select):
     def __init__(self, parent: "PromptView", matches: List[Tuple[int, str]]) -> None:
         super().__init__(
